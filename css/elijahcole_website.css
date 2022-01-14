@@ -1,0 +1,240 @@
+/* General use styling */
+#overrides-bootstrap .pretty * {
+	background: linear-gradient(0deg, #080808, #170E13, #080808);
+	color: #FFFCF9;
+}
+
+#overrides-bootstrap .pretty-bordered {
+	border: 7px ridge #331225;
+}
+
+#overrides-bootstrap .pretty-text {
+	color: #BC2B4F;
+	font-style: italic;
+	font-family: 'Lora', serif;
+}
+#overrides-bootstrap .pretty-background {
+	background: repeating-linear-gradient(
+		45deg,
+		#331225,
+		#331225 10px,
+		#170E13 10px,
+		#170E13 100px
+	);
+	border: 7px solid #331225;
+	border-radius: 5px;
+}
+
+
+/* Whole Page */
+html {
+	scroll-behavior: smooth;
+}
+
+body { 
+	position:relative;
+	background-color: #331225;
+	background: radial-gradient(circle, #331225, #170E13);
+	color: #FFFCF9;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+#overrides-bootstrap .navbar-fixed-top {
+	margin: 2px;
+	margin-top: 0;
+	border: 7px solid #331225;
+	border-radius: 5px;
+	border-top: none;
+}
+
+#overrides-bootstrap a:active {
+	color: #CAAD55;
+}
+
+a:hover{
+	color: #331225;
+}
+
+#overrides-bootstrap footer {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	padding:10px;
+	margin:auto;
+	background-color: #170E13;
+}
+
+main { /* Todo: consider depreciating vw for margin/padding. I think it might be fucking up smaller windows */
+	padding: 0px 10vw 0px 10vw;
+	padding-top: 150px;
+}
+
+/* Body */
+	/* Introduction */
+.pfp-image {
+	width: 300px;
+	height: 300px;
+}
+
+#contact-info {
+	padding:50px;
+}
+
+	/* Buttons */
+.btn {
+	background-color: #CAAD55;
+	color: #FFFCF9;
+	border-color: #170E13;
+	border-width: 3px;
+	border-radius: 7px;
+	border: none;
+	margin-top: 15px;
+}
+.btn:hover {
+	background-color: #5e5127;
+}
+	
+	/* Projects */
+#projects {
+	padding: 50px 10vw 0px 10vw;
+}
+
+#project-uwt .gallery-img {
+	height:100px;
+	margin: 15px 15px 0px 0px;
+    text-align: justify;
+}
+.gallery-img-big {
+	width: 40vw;
+}
+.gray {
+    filter: grayscale(100%);
+}
+#preview {
+    position: absolute;
+    padding: 10px 10px 0 10px;
+    display: none;
+    background-color: #170E13;
+}
+#preview p {
+    color: #FFFCF9; 
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+	
+	/* Interests */
+#interests {
+	padding: 0px 10vw 0px 10vw;
+	background-color: #BC2B4F;
+}
+
+#overrides-bootstrap .movies {
+	padding-left: 50px;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: justify;
+	/*overflow-x: scroll;*/
+}
+	
+#overrides-bootstrap .movies a {
+	vertical-align: top;
+    display: inline-block;
+    zoom: 1;
+}
+
+.movie-image {
+	border-radius: 7px;
+	border-width: 5px;
+	border-color: #FFFCF9;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+.stretch { /* the .stretch span magically makes the movie-images space evenly. idk how it works, i ripped this off stack-overflow */
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+	/* Text */
+.row {
+	margin: 0 10vw 0 10vw;
+}
+
+h2 {
+	display: inline-block;
+    font-family: 'Playfair Display', serif;
+}
+
+.text-container {
+	margin-top: 50px;
+	margin-left: 75px;
+}
+
+.text-block {
+	text-indent:20px;
+}
+
+#overrides-bootstrap .panel-heading, .panel {
+	background-color: initial;
+	border: none;
+}
+#overrides-bootstrap .panel-heading {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.generic-text {
+	font-family: 'Flow Rounded', cursive !important;
+}
+
+ul, ol, li {
+	list-style-type:none;
+}
+
+	/* Flourishes */
+.flowerbarpng {
+	height: 1.5em;
+	margin-right: 5px;
+	display: inline-block;
+	float: left;
+}
+
+
+/*	Main color pallete: https://coolors.co/080808-170e13-331225-bc2b4f-fffcf9-caad55
+	#080808 - Rich Black FOGRA 39
+	#170E13 - Xiketic
+	#331225 - Dark Purple
+	#BC2B4F - Bright Maroon
+	#FFFCF9 - Baby Powder
+	#CAAD55 - Vegas Gold
+*/
+
+/*  Fonts:
+    font-family: 'Corinthia', cursive;
+	
+	font-family: 'Cinzel', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
+	
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+	
+	(misc)
+    font-family: 'Flow Rounded', cursive;
+    font-family: 'Press Start 2P', cursive;
+*/
+/*  Possible additional colors:
+	9197AE - Cool Gray
+	D9CAB3 - Bone
+	ED6A5A - Terra Cotta
+	E54B4B - Imperial Red
+	711935 - Claret
+	6E633D - Antique Bronze
+	E86A92 - Cyclamen
+*/
