@@ -25,7 +25,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-11">
     <title>Elijah S Cole</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -254,7 +253,7 @@
 	/* ===== Begin UWTscreenshots ===== */
 	
 	var gallery = document.getElementById("UWTscreenshots");	//The UWTscreenshots images will be generated from an array in the following code
-	for(var i = 0; i < jsonUWTscreenshots .length; i++) { 		//Generating gallery images from the images array in js/images.js
+	for(var i = 0; i < jsonUWTscreenshots .length; i++) { 		//Generating gallery images from the images array in js/gallery_UWTscreenshots_JSON.js
 		if(i != 1) { 											//We arent using image #2
 			var image = jsonUWTscreenshots [i];
 			gallery.innerHTML += "<img id='" + image.id + "' class='gallery-img' src='imgs/" + image.filename + "' alt ='" + image.content + "'>";
@@ -303,7 +302,7 @@
 	/* ===== Begin MOVIEimages ===== */
 	
 	var gallery = document.getElementById("movies-panel");	//The movies-panel images will be generated from an array in the following code
-	for(var i = 0; i < jsonMOVIEimages .length; i++) { 		//Generating gallery images from the images array in js/images.js
+	for(var i = 0; i < jsonMOVIEimages .length; i++) { 		//Generating movie images from the images array in js/gallery_movies_JSON.js
 			var image = jsonMOVIEimages [i];
 			gallery.innerHTML += "<a href=" + image.href + "><img class='movie-image' width='150' height='225' src='" + image.src + "' srcset='" + image.srcset + "'alt ='" + image.alt + "'></a>";
 	}
