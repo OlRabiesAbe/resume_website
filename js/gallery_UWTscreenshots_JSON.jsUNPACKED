@@ -1,0 +1,10 @@
+var UWTscreenshots = '[
+{"id":1,"filename":"uwt_01.PNG","content":"The studentside page" },
+{"id":2,"filename":"uwt_02.PNG","content":"The adminside search function" },
+{"id":3,"filename":"uwt_03.PNG","content":"An adminside user sheet" },
+{"id":4,"filename":"uwt_04.PNG","content":"The adminside sitewide text editor" },
+{"id":5,"filename":"uwt_05.PNG","content":"An example of an adminside search" }
+]';
+
+/* 	ctrl H, check extended, find and replace "\r\n" with nothing, saveas gallery_UWTscreenshots_JSON.js 
+	add the line var jsonUWTscreenshots = JSON.parse(UWTscreenshots);*/
