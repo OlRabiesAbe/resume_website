@@ -130,7 +130,7 @@ main { /* Todo: consider depreciating vw for margin/padding. I think it might be
 	background-color: #BC2B4F;
 }
 
-#overrides-bootstrap .movies-panel {
+#overrides-bootstrap #movies-panel {
 	padding-left: 50px;
     margin-left: auto; 
     margin-right: auto;
@@ -138,7 +138,7 @@ main { /* Todo: consider depreciating vw for margin/padding. I think it might be
 	/*overflow-x: scroll;*/
 }
 	
-#overrides-bootstrap .movies-panel a {
+#overrides-bootstrap #movies-panel a {
 	vertical-align: top;
     display: inline-block;
     zoom: 1;

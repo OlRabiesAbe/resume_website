@@ -18,6 +18,7 @@
 		https://codepen.io/amit_sheen/pen/LYNKerG
 	Flourishes fixed to sides of screen and navbar
 	Make a Linkhub for cool shit
+	Add Knives Out & Rituals to movie json
 -->
 
 <!DOCTYPE html>
@@ -39,6 +40,7 @@
 
     <link rel="stylesheet" href="css/elijahcole_website.css" />
 	<script src="js/gallery_UWTscreenshots_JSON.js"></script>
+	<script src="js/gallery_movies_JSON.js"></script>
 </head>
 
 
@@ -231,27 +233,7 @@
 	<div id="interests">
 	
 		<h2> A Few of My Favorite Movies </h2> <!-- Movies -->
-		<div class="panel movies-panel">
-		
-			<a href="https://letterboxd.com/film/princess-mononoke/" title="I <3 Studio Ghibli movies"> <!-- Interesting note, col-md-1 makes the movies overlap like cards. Could use that for something else -->
-				<img src="imgs/movies_mononoke.jpg" alt="Princess Mononoke" srcset="https://a.ltrbxd.com/resized/sm/upload/fu/5h/fp/mj/mNqZOtJIQfFQPjo3hmYLIn8Qqhf-0-300-0-450-crop.jpg?k=3ee87607c5 2x" class="movie-image" width="150" height="225">
-			</a>
-			
-			<a href="https://letterboxd.com/film/the-lighthouse-2019/" title="I'd be lying if I said I understood the ending">
-				<img src="imgs/movies_lighthouse.jpg" alt="The Lighthouse" srcset="https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-300-0-450-crop.jpg?k=9c4f0eb0d1 2x" class="movie-image" width="150" height="225">
-			</a>
-			
-			<a href="https://letterboxd.com/film/the-grand-budapest-hotel/" title="I <3 Wes Anderson movies">
-				<img src="imgs/movies_grandbudapest.jpg" alt="The Grand Budapest Hotel" srcset="https://a.ltrbxd.com/resized/film-poster/9/5/1/1/3/95113-the-grand-budapest-hotel-0-300-0-450-crop.jpg?k=6acbe37619 2x" class="movie-image" width="150" height="225">
-			</a>
-			
-			<a href="https://letterboxd.com/film/stalker/" title="Read the book, played the games, saw the movie">
-				<img src="imgs/movies_stalker.jpg" alt="Stalker" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/0/6/2/51062-stalker-0-300-0-450-crop.jpg?k=5cc6f15b1a 2x" class="movie-image" width="150" height="225">
-			</a>
-			
-			<span class="stretch"></span> <!-- the .stretch span magically makes the movie-images space evenly. idk how it works, i ripped this off stack-overflow -->
-			
-		</div>
+		<div id="movies-panel" class="panel"></div>
 		
 		<div class="text-container generic-text">-</div> <!-- This div makes the footer not clip into the above section. idk why. i also dont know why you can't see it. the dash needs to be there for it to work :/ -->
 	</div>
@@ -275,7 +257,6 @@
 	for(var i = 0; i < jsonUWTscreenshots .length; i++) { 		//Generating gallery images from the images array in js/images.js
 		if(i != 1) { 											//We arent using image #2
 			var image = jsonUWTscreenshots [i];
-			console.log(image.id);
 			gallery.innerHTML += "<img id='" + image.id + "' class='gallery-img' src='imgs/" + image.filename + "' alt ='" + image.content + "'>";
 		}
 	}
@@ -318,5 +299,15 @@
 		$("#preview").remove();
 	});
 	/* ===== End UWTscreenshots ===== */
+	
+	/* ===== Begin MOVIEimages ===== */
+	
+	var gallery = document.getElementById("movies-panel");	//The movies-panel images will be generated from an array in the following code
+	for(var i = 0; i < jsonMOVIEimages .length; i++) { 		//Generating gallery images from the images array in js/images.js
+			var image = jsonMOVIEimages [i];
+			gallery.innerHTML += "<a href=" + image.href + "><img class='movie-image' width='150' height='225' src='" + image.src + "' srcset='" + image.srcset + "'alt ='" + image.alt + "'></a>";
+	}
+	gallery.innerHTML += "<span class='stretch'></span>"; //the .stretch span magically makes the movie-images space evenly. idk how it works, i ripped this off stack-overflow
+	/* ===== EndMOVIEimages ===== */
 	
 </script>
