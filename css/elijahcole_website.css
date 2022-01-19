@@ -165,7 +165,8 @@ main { /* Todo: consider depreciating vw for margin/padding. I think it might be
 	margin: 0 10vw 0 10vw;
 }
 
-h2 {
+
+h1, h2 {
 	display: inline-block;
     font-family: 'Playfair Display', serif;
 }
