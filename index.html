@@ -4,9 +4,11 @@
 	Create games/books/cooking sections
 		Favorite books: House of Leaves, Master & Margarita, If on a Winter's Night a Traveler, American Gods, Song of Achilles, Autobiography of Red, Salt Fat Acid Heat, 
 			Maybe I should do favorite authors instead?
-		Cool games section: Favorite games would be too hard to decided
-			It shows like four most recent additions, and a link takes you to a seperate page
-			Just pics of the game and a link to the steam page: i dont want to write anything
+		Cool games section: Favorite games would be too hard to decide
+			Maybve it shows like four most recent additions, and a link takes you to a seperate page
+			Just pic of the game and a link to the steam page: i dont want to write anything
+		Pics of food i cooked
+			Maybe recipes? Maybe too much work
 	Take decent selfie to put in place of dumbass skeleton
 	Figure out how to use boxshadow to, like, negative-radius a border
 		https://itnext.io/how-to-make-a-fancy-inverted-border-radius-in-css-5db048a53f95
@@ -15,6 +17,7 @@
 		https://css-tricks.com/gradient-borders-in-css/
 		https://codepen.io/amit_sheen/pen/LYNKerG
 	Flourishes fixed to sides of screen and navbar
+	Make a Linkhub for cool shit
 -->
 
 <!DOCTYPE html>
@@ -26,24 +29,22 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
+	<!-- Imports -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />        
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Corinthia&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500&family=Flow+Rounded&family=Lora:ital,wght@0,400;1,500&family=Maven+Pro&family=Montserrat:ital,wght@0,300;1,300&family=Oxygen:wght@300&family=Playfair+Display:ital@0;1&family=Press+Start+2P&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />        
-    <link rel="stylesheet" href="css/bootstrap-theme.css" />
     <link rel="stylesheet" href="css/elijahcole_website.css" />
-    
 	<script src="js/gallery_UWTscreenshots_JSON.js"></script>
-	
-	<!-- Importing jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 
 <!-- Page Content -->
 <!-- The id="overrides-bootstrap" allows me to easily do so by using css selectors, -->
-<!-- e.g. "#overrides-bootstrap .text-container{}" will override all text-containers by right of specificity -->
+<!-- e.g. "#overrides-bootstrap .text-container" will override all text-containers by right of specificity -->
 <body id="overrides-bootstrap">
 
 	<!-- Fixed Header -->
@@ -53,7 +54,7 @@
 				<li><a href="#intro"> Who I Am </a></li>
 				<li><a href="#projects"> What I Do </a></li>
 				<li><a href="#interests"> My Interests </a></li>
-				<li><a href=""> Log In </a></li>
+				<!--<li><a href=""> Log In </a></li>-->
 			</ul>
 		</nav>
 	</header>
@@ -62,17 +63,23 @@
 	<main>
 		<!-- Introduction -->
 		<div id="intro" class="row">
+		
 			<div class="col-lg-5">
 				<img class="pfp-image pretty-bordered featurette-image" src="imgs/pfp.jpg" alt="Skeleton face" title="Not my actual face">
 			</div>
+			
 			<div class="col-lg-5">
+			
 				<h2>Call me Eli</h2>
+				
 				<p class="pretty-text">Deeply passionate about all levels of design.</p>
+				
 				<p class="text-block">
 					Ambitious Comp Sci student with team-based development experience eager to contribute developed knowledge in a Software Development role. 
 					Skilled in <span class="pretty-text">Java, HTML/CSS, Javascript, and C</span> in fast-paced settings. 
 					Adaptable, driven by a love of the work, and motivated to thrive in group or individual settings.
 				</p>
+				
 				<a class="btn" href="resume/elijahcole_resume.pdf" role="button">View resume &raquo;</a>
 			</div>
 		</div>
@@ -81,18 +88,24 @@
 		<div class="text-container">     
 			<div class="panel panel-default">
 				<div class="panel-body">
+				
 					<p class="text-block">
 						🙤 I'm a newly minted software developer just out of UWT & looking to enter the workforce. This site is a personal project/demonstration of my abilities. 
 						It's going to see regular changes and development for as long as I remain interested in it; you should expect gimmicks and neat things.
 					</p>
+					
 					<p class="text-block">
 						You're currently on <a class="pretty-text" href="#intro">Who I Am</a>, a short bio. <a class="pretty-text" href="#projects">What I Do</a> is a list of my projects,
 						and <a class="pretty-text" href="#interests">My Interests</a> is where I ramble about some of my personal interests.
 					</p>
+					
 				</div>
 			</div>
+			
 			<div id="contact-info" class="pretty-background panel panel-default">
+			
 				<h2 class="panel-heading">Get in touch</h2>
+				
 				<div class="panel-body">
 					<li>Phone: 253-202-3530</li>
 					<li>Email: elijahscole333@gmail.com</li>
@@ -102,113 +115,145 @@
 		</div>
 	</main>
 	
+	<!-- My projects section -->
 	<div id="projects">
 		<!-- Project Panel -->
 		<div class="text-container">
-			<div class="panel panel-default">
+			<div class="panel panel-default"> <!-- Project section Heading -->
 				<h2 class="panel-heading"> A Few of My Projects </h2>
 			</div>
 		</div>
+		
 		<div class="text-container">
 			<div class="panel panel-default">
-				<h2 class="panel-heading pretty-text">
+			
+				<h2 class="panel-heading pretty-text"> <!-- Panel Heading -->
 					Untitled Cat Game 
 					<img class="flowerbarpng" src="imgs/flower-bar.png">
 				</h2>
+				
 				<div class="panel-body">
-					<p class="text-block">
+				
+					<p class="text-block"> <!-- Panel main text body -->
 						🙤 This was a Javascript browser game I made for a group project in my third year of college. In Digital Worlds, I and two other students designed and programmed a game over a semester. 
 						We were afforeded total freedom as to what we made, only that we had to deliver a finished project by the end of the quarter. After some discussion of things like scope and our relative abilities, 
 						we settled on making a pretty basic 2D platformer about a cat running around a city. We understood that an all-too-common pitfall in software development was overestimating what can be accomplished with
 						the available time and resources, so we decided to keep our goals conservative and divided the workload among us according to ability. 
 						This proved a tactful move, as we were able to deliver a mostly finished project by the deadline where other teams failed. 
 					</p>
+					
 					<p class="pretty-text text-block">
 						While a bit rough-around-the-edges, UCG is a solid team project that I can honestly say I'm proud of.
 					</p>
+					<!-- Panel links -->
 					<a class="btn" href="https://olrabiesabe.github.io/jeu-de-chat-sans-titre/" role="button">Play Untitled Cat Game &raquo;</a>
 					<a class="btn" href="https://github.com/OlRabiesAbe/untitled-cat-game" role="button">View codebase &raquo;</a>
 				</div>
 			</div>
 		</div>
+		
 		<!-- Project Panel -->
 		<div class="text-container">
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<h2 class="panel-heading pretty-text">
+				
+					<h2 class="panel-heading pretty-text"> <!-- Panel Heading -->
 						Baatar Bullet
 						<img class="flowerbarpng" src="imgs/flower-bar.png">
 					</h2>
-					<p class="text-block">
+					
+					<p class="text-block"> <!-- Panel main text body -->
 						🙤 An unfinished topdown bullet-hell shooter built out of a modified version of the Untitled Cat Game engine. 
 						I lost interest in the project and it will likely remain forever incomplete, but am still proud of what I was able to get done working on & off in less than a month.
 					</p>
+					<!-- Panel links -->
 					<a class="btn" href="https://olrabiesabe.github.io/baatar-bullet/" role="button">Play Baatar Bullet &raquo;</a>
 					<a class="btn" href="https://github.com/OlRabiesAbe/baatar-bullet" role="button">View codebase &raquo;</a>
 				</div>
 			</div>
 		</div>
+		
 		<!-- Project Panel -->
 		<div class="text-container">
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<h2 class="panel-heading pretty-text">
+				
+					<h2 class="panel-heading pretty-text"> <!-- Panel Heading -->
 						Imprimis
 						<img class="flowerbarpng" src="imgs/flower-bar.png">
 					</h2>
-					<p class="text-block generic-text">
+					
+					<p class="text-block generic-text"> <!-- Panel main text body -->
 						🙤 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel convallis nulla. Donec vel nisl massa. Quisque ac mollis arcu. Praesent at lacus nunc. Donec consequat elit et eleifend auctor. Mauris volutpat metus id felis egestas, tincidunt viverra metus auctor. Proin gravida est quis sapien posuere, quis luctus leo iaculis. Ut a lorem egestas, eleifend nibh ut, finibus lorem. Nulla condimentum aliquam diam eu feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nibh tincidunt, lacinia mauris sed, tempus mauris. 
 					</p>
+					
 					<p class="pretty-text text-block generic-text">
 						Suspendisse at velit nisl. Cras fermentum felis ut ullamcorper fringilla.
 					</p>
+					<!-- Panel links -->
 					<a class="btn" href="https://github.com/project-imprimis/libprimis" role="button">View codebase &raquo;</a>
 				</div>
 			</div>
 		</div>
+		
 		<!-- Project Panel -->
 		<div id="project-uwt" class="text-container">
 			<div class="panel panel-default">
-				<h2 class="panel-heading pretty-text">
+			
+				<h2 class="panel-heading pretty-text"> <!-- Panel Heading -->
 					UWT Community Service Portal
 					<img class="flowerbarpng" src="imgs/flower-bar.png">
 				</h2>
+				
 				<div class="panel-body">
+				
 					<p class="text-block generic-text">
 						🙤 Nullam condimentum, magna id congue imperdiet, est erat ultricies risus, sed aliquam enim mi eu tellus. Pellentesque commodo mattis nisl, ac rhoncus quam tempor id. Sed tincidunt est vitae accumsan egestas. Curabitur nec tempus dolor. Donec luctus consectetur rutrum. Maecenas ultricies ornare sagittis. Donec fermentum, diam nec luctus gravida, felis lorem pellentesque est, ac lobortis augue tellus at nulla. Integer vel posuere quam. Praesent ultrices vitae massa vitae faucibus. Pellentesque ac tellus arcu. Aliquam non magna nec ligula faucibus ultrices. Etiam ullamcorper in nunc sit amet dictum. 
 					</p>
-					<div style="display:none;"> <!-- Can't access this page without a verified UWT account. Afaik, mine is literally the only one. Just gotta make do with screenshots -->
+					
+					<div style="display:none;"> <!-- Panel links --><!-- Can't access this page without a verified UWT account. Afaik, mine is literally the only one. Just gotta make do with screenshots -->
 						<a class="btn" href="https://depts.washington.edu/csluwt/students/dash/studentSide.php" role="button">View Student-side &raquo;</a>
 						<a class="btn" href="https://depts.washington.edu/csluwt/admin/adminDashboard.php" role="button">View Admin-side &raquo;</a>
 					</div>
-					<div id="UWTscreenshots"> <!-- These images def need hover-to-zoom --> <!-- Spacing is ugly af at the moment. Need to fix -->
+					<!-- Panel images --> <!-- This div contains screenshots of the UWT site i built. The imgs for it are generated in the js section labelled UWTscreenshots -->
+					<div id="UWTscreenshots">
 						<p class="pretty-text text-block">
 							Mouseover to zoom 
 						</p>
 					</div>
+					
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div id="interests"><!-- Interesting note, col-md-1 makes the movies overlap like cards. Could use that for something else -->
-		<h2> A Few of My Favorite Movies </h2>
-		<div class="movies">
-			<a href="https://letterboxd.com/film/princess-mononoke/" title="I <3 Studio Ghibli movies">
+	<!-- The personal interests section -->
+	<div id="interests">
+	
+		<h2> A Few of My Favorite Movies </h2> <!-- Movies -->
+		<div class="panel movies-panel">
+		
+			<a href="https://letterboxd.com/film/princess-mononoke/" title="I <3 Studio Ghibli movies"> <!-- Interesting note, col-md-1 makes the movies overlap like cards. Could use that for something else -->
 				<img src="imgs/movies_mononoke.jpg" alt="Princess Mononoke" srcset="https://a.ltrbxd.com/resized/sm/upload/fu/5h/fp/mj/mNqZOtJIQfFQPjo3hmYLIn8Qqhf-0-300-0-450-crop.jpg?k=3ee87607c5 2x" class="movie-image" width="150" height="225">
 			</a>
+			
 			<a href="https://letterboxd.com/film/the-lighthouse-2019/" title="I'd be lying if I said I understood the ending">
 				<img src="imgs/movies_lighthouse.jpg" alt="The Lighthouse" srcset="https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-300-0-450-crop.jpg?k=9c4f0eb0d1 2x" class="movie-image" width="150" height="225">
 			</a>
+			
 			<a href="https://letterboxd.com/film/the-grand-budapest-hotel/" title="I <3 Wes Anderson movies">
 				<img src="imgs/movies_grandbudapest.jpg" alt="The Grand Budapest Hotel" srcset="https://a.ltrbxd.com/resized/film-poster/9/5/1/1/3/95113-the-grand-budapest-hotel-0-300-0-450-crop.jpg?k=6acbe37619 2x" class="movie-image" width="150" height="225">
 			</a>
+			
 			<a href="https://letterboxd.com/film/stalker/" title="Read the book, played the games, saw the movie">
 				<img src="imgs/movies_stalker.jpg" alt="Stalker" srcset="https://a.ltrbxd.com/resized/film-poster/5/1/0/6/2/51062-stalker-0-300-0-450-crop.jpg?k=5cc6f15b1a 2x" class="movie-image" width="150" height="225">
 			</a>
+			
 			<span class="stretch"></span> <!-- the .stretch span magically makes the movie-images space evenly. idk how it works, i ripped this off stack-overflow -->
+			
 		</div>
-		<div class="text-container generic-text">-</div> <!-- This div makes the footer not clip into the movies. idk why. i also dont know why you can't see it. the dash needs to be there for it to work :/ -->
+		
+		<div class="text-container generic-text">-</div> <!-- This div makes the footer not clip into the above section. idk why. i also dont know why you can't see it. the dash needs to be there for it to work :/ -->
 	</div>
 	
 </body>
@@ -218,49 +263,60 @@
 	<span> Copyright 2021 </span>
 	<span style="float:right;"> jk i don't care </span>
 </footer>
+
 </html>
 
 <!--JAVASCRIPT-->
 <script>
-var gallery = document.getElementById("UWTscreenshots");	//The UWTscreenshots images will be generated from an array in the following code
 
-
-for(var i = 0; i < jsonUWTscreenshots .length; i++) { 		//Generating gallery images from the images array in js/images.js
-	if(i != 1) { 											//We arent using image #2
-		var image = jsonUWTscreenshots [i];
-		console.log(image.id);
-		gallery.innerHTML += "<img id='" + image.id + "' class='gallery-img' src='imgs/" + image.filename + "' alt ='" + image.content + "'>";
-	}
-}
-
-
-//Mass-applying mouseenter behavior to all of our generated images
-$(".gallery-img").on("mouseenter", function(event){
-	$(this).addClass("gray");
-														//When an image is moused over, a preview of that image pops up. The pop-up is generated here
-														//First we need to fetch the relevant images array entry via the id propery on the gallery img
-	var thisImage = jsonUWTscreenshots.filter(obj => {
-		return obj.id == $(this).attr("id");
-	})[0];	
+	/* ===== Begin UWTscreenshots ===== */
 	
-	var preview = "<div id='preview'> <img class='gallery-img-big' src='imgs/" + thisImage.filename + "'>";
-	preview += "<p>" + thisImage.content + "</p></div>";
-	$("body").append(preview);
-														//We need to set the left and top properties for the preview so it appears at the mouse cursor and at the right size
-														//First we fetch the mouse position and offset its x and y by 25 so the preview isn't directly under the mouse, as that would cause the mouseenter event to cancel next frame
-	var x = event.pageX + 25;
-	var y = event.pageY - 25;
-														//Applying the left and top
-	$("#preview").css("left", x);
-	$("#preview").css("top", y);
-														//#preview is set to display:none by default so the last thing we do is make it appear
-	$("#preview").css("display", "block");
-});
+	var gallery = document.getElementById("UWTscreenshots");	//The UWTscreenshots images will be generated from an array in the following code
+	for(var i = 0; i < jsonUWTscreenshots .length; i++) { 		//Generating gallery images from the images array in js/images.js
+		if(i != 1) { 											//We arent using image #2
+			var image = jsonUWTscreenshots [i];
+			console.log(image.id);
+			gallery.innerHTML += "<img id='" + image.id + "' class='gallery-img' src='imgs/" + image.filename + "' alt ='" + image.content + "'>";
+		}
+	}
 
-//Mass-applying mouseleave behavior to all of our generated images
-//Deapplying gray class & removing the preview of the image
-$(".gallery-img").on("mouseleave", function(){
-	$(this).removeClass("gray");
-	$("#preview").remove();
-});
+															//Mass-applying mouseenter behavior to all of our generated images
+	$(".gallery-img").on("mouseenter", function(event){
+		$(this).addClass("gray");
+															//When an image is moused over, a preview of that image pops up. The pop-up is generated here
+															//First we need to fetch the relevant images array entry via the id propery on the gallery img
+		var thisImage = jsonUWTscreenshots.filter(obj => {
+			return obj.id == $(this).attr("id");
+		})[0];	
+		
+		var preview = "<div id='preview'> <img class='gallery-img-big' src='imgs/" + thisImage.filename + "'>";
+		preview += "<p>" + thisImage.content + "</p></div>";
+		$("body").append(preview);
+															//We need to set the left and top properties for the preview so it appears at the mouse cursor and at the right size
+															//First we fetch the mouse position and offset its x and y by 25 so the preview isn't directly under the mouse, as that would cause the mouseenter event to cancel next frame
+		var x = event.pageX + 25;
+		var y = event.pageY - 25;
+															//Applying the left and top
+		$("#preview").css("left", x);
+		$("#preview").css("top", y);
+															//#preview is set to display:none by default so the last thing we do is make it appear
+		$("#preview").css("display", "block");
+	});
+
+															//Mass-applying mousemove behavior to all of our generated images
+	$(".gallery-img").on("mousemove", function(event){
+		var x = event.pageX + 25;
+		var y = event.pageY - 25;
+		$("#preview").css("left", x);
+		$("#preview").css("top", y);
+	});
+
+															//Mass-applying mouseleave behavior to all of our generated images
+															//Deapplying gray class & removing the preview of the image
+	$(".gallery-img").on("mouseleave", function(){
+		$(this).removeClass("gray");
+		$("#preview").remove();
+	});
+	/* ===== End UWTscreenshots ===== */
+	
 </script>
