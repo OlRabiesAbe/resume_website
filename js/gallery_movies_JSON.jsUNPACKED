@@ -7,8 +7,11 @@ var movieImages = '[
 {"id":6,"alt":"Rashomon","href":"https://letterboxd.com/film/rashomon/","src":"https://a.ltrbxd.com/resized/film-poster/5/1/5/7/0/51570-rashomon-0-230-0-345-crop.jpg?k=21fa6fc6e9","srcset":"https://a.ltrbxd.com/resized/film-poster/5/1/5/7/0/51570-rashomon-0-460-0-690-crop.jpg?k=e8782e36a1 2x" },
 {"id":7,"alt":"Oldboy","href":"https://letterboxd.com/film/oldboy/","src":"https://a.ltrbxd.com/resized/sm/upload/yl/pb/x9/pe/hzj9o9cizYFv76rK0C7nXBAQ9lw-0-230-0-345-crop.jpg?k=5e50470fcf","srcset":"https://a.ltrbxd.com/resized/sm/upload/yl/pb/x9/pe/hzj9o9cizYFv76rK0C7nXBAQ9lw-0-460-0-690-crop.jpg?k=880ad50387 2x" },
 {"id":8,"alt":"Cannibal Holocaust","href":"https://letterboxd.com/film/cannibal-holocaust/","src":"https://a.ltrbxd.com/resized/film-poster/4/7/6/4/6/47646-cannibal-holocaust-0-230-0-345-crop.jpg?k=6f997a5722","srcset":"https://a.ltrbxd.com/resized/film-poster/4/7/6/4/6/47646-cannibal-holocaust-0-460-0-690-crop.jpg?k=9067a6d8c4 2x" },
-{"id":9,"alt":"Julien Donkey-Boy","href":"https://letterboxd.com/film/julien-donkey-boy/","src":"https://a.ltrbxd.com/resized/film-poster/2/2/2/1/9/22219-julien-donkey-boy-0-230-0-345-crop.jpg?k=c95f923c8a","srcset":"https://a.ltrbxd.com/resized/film-poster/2/2/2/1/9/22219-julien-donkey-boy-0-460-0-690-crop.jpg?k=ca4008af57 2x" }
+{"id":9,"alt":"Julien Donkey-Boy","href":"https://letterboxd.com/film/julien-donkey-boy/","src":"https://a.ltrbxd.com/resized/film-poster/2/2/2/1/9/22219-julien-donkey-boy-0-230-0-345-crop.jpg?k=c95f923c8a","srcset":"https://a.ltrbxd.com/resized/film-poster/2/2/2/1/9/22219-julien-donkey-boy-0-460-0-690-crop.jpg?k=ca4008af57 2x" },
+{"id":10,"alt":"Bacurau","href":"https://letterboxd.com/film/bacurau/","src":"https://a.ltrbxd.com/resized/film-poster/3/7/8/6/0/1/378601-bacurau-0-230-0-345-crop.jpg?k=e72189c21e","srcset":"https://a.ltrbxd.com/resized/film-poster/3/7/8/6/0/1/378601-bacurau-0-460-0-690-crop.jpg?k=aad0390aa0 2x" },
+{"id":11,"alt":"Rituals","href":"https://letterboxd.com/film/rituals/","src":"https://a.ltrbxd.com/resized/film-poster/5/3/3/7/0/53370-rituals-0-230-0-345-crop.jpg?k=c392591cd3","srcset":"https://a.ltrbxd.com/resized/film-poster/5/3/3/7/0/53370-rituals-0-460-0-690-crop.jpg?k=b18938bdb1 2x" }
 ]';
 
 
-/* 	ctrl H, check extended, find and replace "\r\n" with nothing, saveas gallery_UWTscreenshots_JSON.js add the line var jsonMOVIEimages = JSON.parse(movieImages);*/
+/* 	ctrl H, check extended, find and replace "\r\n" with nothing, saveas gallery_UWTscreenshots_JSON.js*
+/var jsonMOVIEimages = JSON.parse(movieImages);

@@ -1,9 +1,7 @@
 <!--Made by Elijah S Cole 2021-->
 <!-- TODO:
-	Add text for imprimis and UWT project entries
-	Create games/books/cooking sections
-		Favorite books: House of Leaves, Master & Margarita, If on a Winter's Night a Traveler, American Gods, Song of Achilles, Autobiography of Red, Salt Fat Acid Heat, 
-			Maybe I should do favorite authors instead?
+	Improve UWT project entry
+	Create games/cooking sections
 		Cool games section: Favorite games would be too hard to decide
 			Maybve it shows like four most recent additions, and a link takes you to a seperate page
 			Just pic of the game and a link to the steam page: i dont want to write anything
@@ -18,7 +16,7 @@
 		https://codepen.io/amit_sheen/pen/LYNKerG
 	Flourishes fixed to sides of screen and navbar
 	Make a Linkhub for cool shit
-	Add Knives Out & Rituals to movie json
+	Add better background to stage 1 and 2 of UCG
 -->
 
 <!DOCTYPE html>
@@ -40,6 +38,7 @@
     <link rel="stylesheet" href="css/elijahcole_website.css" />
 	<script src="js/gallery_UWTscreenshots_JSON.js"></script>
 	<script src="js/gallery_movies_JSON.js"></script>
+	<script src="js/gallery_books_JSON.js"></script>
 </head>
 
 
@@ -103,6 +102,7 @@
 				</div>
 			</div>
 			
+			<!-- Contact info -->
 			<div id="contact-info" class="pretty-background panel panel-default">
 			
 				<h2 class="panel-heading">Get in touch</h2>
@@ -154,6 +154,43 @@
 		</div>
 		
 		<!-- Project Panel -->
+		<div id="project-uwt" class="text-container">
+			<div class="panel panel-default">
+			
+				<h2 class="panel-heading pretty-text"> <!-- Panel Heading -->
+					UWT Community Service Portal
+					<img class="flowerbarpng" src="imgs/flower-bar.png">
+				</h2>
+				
+				<div class="panel-body">
+				
+					<p class="text-block"> <!-- MORE TECHNICAL DETAILS, FORMAT BETTER -->
+						🙤 In the early summer of 2019, I and four other CSCII students at UWT were approached with an internship opportunity by the university's community service department.<br>
+						Students could log community service hours with approved organizations in exchange for credits and a medal of recognition. Up until then, students had done this through a poorly-implemented Google Form; we were asked to build a dedicated website.
+						Over the next five months, we operated together as a team to build a web app from scratch in a self imposed quasi-Scrum environment. It was an incredible learning experience and quite honestly one of the best summers of my life.
+						We completed the product and met all of our core requirements. When we presented it to him, the department head was deeply pleased with what we delivered.
+					</p>
+					<p class="text-block">
+						It was all for naught however: within a week of our finishing the portal, the university reduced the funding of the community service department by more than half. The head was forced to quit on account of his paycut and his replacement was uninterested in our work.
+						The code still sits on the UWT servers to this day, unused and partially gutted. I could not secure a copy of my work, so all I have to show for that summer are these screenshots.
+					</p>
+					
+					<div style="display:none;"> <!-- Panel links --><!-- Can't access this page without a verified UWT account. Afaik, mine is literally the only one. Just gotta make do with screenshots -->
+						<a class="btn" href="https://depts.washington.edu/csluwt/students/dash/studentSide.php" role="button">View Student-side &raquo;</a>
+						<a class="btn" href="https://depts.washington.edu/csluwt/admin/adminDashboard.php" role="button">View Admin-side &raquo;</a>
+					</div>
+					<!-- Panel images --> <!-- This div contains screenshots of the UWT site i built. The imgs for it are generated in the js section labelled UWTscreenshots -->
+					<div id="UWTscreenshots">
+						<p class="pretty-text text-block">
+							Mouseover to zoom 
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!-- Project Panel -->
 		<div class="text-container">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -165,7 +202,7 @@
 					
 					<p class="text-block"> <!-- Panel main text body -->
 						🙤 An unfinished topdown bullet-hell shooter built out of a modified version of the Untitled Cat Game engine. 
-						I lost interest in the project and it will likely remain forever incomplete, but am still proud of what I was able to get done working on & off in less than a month.
+						I lost interest in the project and it will likely remain forever incomplete, but am still proud of what I was able to get done working on & off for less than a month.
 					</p>
 					<!-- Panel links -->
 					<a class="btn" href="https://olrabiesabe.github.io/baatar-bullet/" role="button">Play Baatar Bullet &raquo;</a>
@@ -184,55 +221,30 @@
 						<img class="flowerbarpng" src="imgs/flower-bar.png">
 					</h2>
 					
-					<p class="text-block generic-text"> <!-- Panel main text body -->
-						🙤 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel convallis nulla. Donec vel nisl massa. Quisque ac mollis arcu. Praesent at lacus nunc. Donec consequat elit et eleifend auctor. Mauris volutpat metus id felis egestas, tincidunt viverra metus auctor. Proin gravida est quis sapien posuere, quis luctus leo iaculis. Ut a lorem egestas, eleifend nibh ut, finibus lorem. Nulla condimentum aliquam diam eu feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at nibh tincidunt, lacinia mauris sed, tempus mauris. 
+					<p class="text-block"> <!-- Panel main text body -->
+						🙤 As a fork of the Tesseract/Cube family of engines, Imprimis has been the passion project of Alex Foster for around two years now. Alex is a close friend of mine, and I've contributed a couple of commits to the project.
+						Make no mistake, Imprimis is entirely his work: what I've done is superficial at best. That said, my involvment in the Imprimis project has been ongoing and I'll always be eager to help out with its development.
 					</p>
 					
-					<p class="pretty-text text-block generic-text">
-						Suspendisse at velit nisl. Cras fermentum felis ut ullamcorper fringilla.
+					<p class="pretty-text text-block">
+						An open source 3D engine and first person shooter game.
 					</p>
 					<!-- Panel links -->
-					<a class="btn" href="https://github.com/project-imprimis/libprimis" role="button">View codebase &raquo;</a>
+					<a class="btn" href="https://github.com/project-imprimis" role="button">View codebase &raquo;</a>
 				</div>
 			</div>
 		</div>
 		
-		<!-- Project Panel -->
-		<div id="project-uwt" class="text-container">
-			<div class="panel panel-default">
-			
-				<h2 class="panel-heading pretty-text"> <!-- Panel Heading -->
-					UWT Community Service Portal
-					<img class="flowerbarpng" src="imgs/flower-bar.png">
-				</h2>
-				
-				<div class="panel-body">
-				
-					<p class="text-block generic-text">
-						🙤 Nullam condimentum, magna id congue imperdiet, est erat ultricies risus, sed aliquam enim mi eu tellus. Pellentesque commodo mattis nisl, ac rhoncus quam tempor id. Sed tincidunt est vitae accumsan egestas. Curabitur nec tempus dolor. Donec luctus consectetur rutrum. Maecenas ultricies ornare sagittis. Donec fermentum, diam nec luctus gravida, felis lorem pellentesque est, ac lobortis augue tellus at nulla. Integer vel posuere quam. Praesent ultrices vitae massa vitae faucibus. Pellentesque ac tellus arcu. Aliquam non magna nec ligula faucibus ultrices. Etiam ullamcorper in nunc sit amet dictum. 
-					</p>
-					
-					<div style="display:none;"> <!-- Panel links --><!-- Can't access this page without a verified UWT account. Afaik, mine is literally the only one. Just gotta make do with screenshots -->
-						<a class="btn" href="https://depts.washington.edu/csluwt/students/dash/studentSide.php" role="button">View Student-side &raquo;</a>
-						<a class="btn" href="https://depts.washington.edu/csluwt/admin/adminDashboard.php" role="button">View Admin-side &raquo;</a>
-					</div>
-					<!-- Panel images --> <!-- This div contains screenshots of the UWT site i built. The imgs for it are generated in the js section labelled UWTscreenshots -->
-					<div id="UWTscreenshots">
-						<p class="pretty-text text-block">
-							Mouseover to zoom 
-						</p>
-					</div>
-					
-				</div>
-			</div>
-		</div>
 	</div>
 	
 	<!-- The personal interests section -->
 	<div id="interests">
 		<h1> About me: </h1><br>
 		<h2> A Few of My Favorite Movies </h2> <!-- Movies -->
-		<div id="movies-panel" class="panel"></div>
+		<div id="movies-panel" class="interests-panel panel"></div>
+		
+		<h2> A Few of My Favorite Books </h2> <!-- Books -->
+		<div id="books-panel" class="interests-panel panel"></div>
 		
 		<div class="text-container generic-text">-</div> <!-- This div makes the footer not clip into the above section. idk why. i also dont know why you can't see it. the dash needs to be there for it to work :/ -->
 	</div>
@@ -299,14 +311,20 @@
 	});
 	/* ===== End UWTscreenshots ===== */
 	
-	/* ===== Begin MOVIEimages ===== */
+	/* ===== Begin MOVIEimages & BOOKimages ===== */
 	
 	var gallery = document.getElementById("movies-panel");	//The movies-panel images will be generated from an array in the following code
 	for(var i = 0; i < jsonMOVIEimages .length; i++) { 		//Generating movie images from the images array in js/gallery_movies_JSON.js
 			var image = jsonMOVIEimages [i];
-			gallery.innerHTML += "<a href=" + image.href + "><img class='movie-image' width='150' height='225' src='" + image.src + "' srcset='" + image.srcset + "'alt ='" + image.alt + "'></a>";
+			gallery.innerHTML += "<a href=" + image.href + "><img class='interests-image' width='150' height='225' src='" + image.src + "' srcset='" + image.srcset + "'alt ='" + image.alt + "'></a>";
 	}
-	gallery.innerHTML += "<span class='stretch'></span>"; //the .stretch span magically makes the movie-images space evenly. idk how it works, i ripped this off stack-overflow
-	/* ===== EndMOVIEimages ===== */
+	
+	var gallery = document.getElementById("books-panel");	//The books-panel images will be generated from an array in the following code
+	for(var i = 0; i < jsonBOOKimages .length; i++) { 		//Generating book images from the images array in js/gallery_books_JSON.js
+			var image = jsonBOOKimages [i];
+			gallery.innerHTML += "<a href=" + image.href + "><img class='interests-image' width='150' height='225' src='" + image.src + "'alt ='" + image.alt + "'></a>";
+	}
+	gallery.innerHTML += "<span class='stretch'></span>"; //the .stretch span magically makes the images space evenly. idk how it works, i ripped this off stack-overflow
+	/* ===== EndMOVIEimages & BOOKimages ===== */
 	
 </script>
