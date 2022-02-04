@@ -145,7 +145,7 @@ main { /* Todo: consider depreciating vw for margin/padding. I think it might be
 	text-decoration: none;
 }
 
-.interests-image {
+#overrides-bootstrap .interests-image {
 	border-radius: 7px;
 	border-width: 5px;
 	border-color: #FFFCF9;
