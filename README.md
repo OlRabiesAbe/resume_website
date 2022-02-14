@@ -3,13 +3,7 @@ Made by Elijah S Cole 2021 onward
 
 TODO:
 	
-	Add text for imprimis and UWT project entries
-	
-	Create games/books/cooking sections
-		
-		Favorite books: House of Leaves, Master & Margarita, If on a Winter's Night a Traveler, American Gods, Song of Achilles, Autobiography of Red, Salt Fat Acid Heat, 
-			
-			Maybe I should do favorite authors instead?
+	Create games/cooking sections
 		
 		Cool games section: Favorite games would be too hard to decide
 			
@@ -21,7 +15,7 @@ TODO:
 			
 			Maybe recipes? Maybe too much work
 	
-	Take decent selfie to put in place of dumbass skeleton
+	Take decent selfie to put in place of skeleton
 	
 	Figure out how to use boxshadow to, like, negative-radius a border
 		
@@ -38,3 +32,5 @@ TODO:
 	Flourishes fixed to sides of screen and navbar
 	
 	Make a Linkhub for cool shit
+	
+	Add better background to stage 1 and 2 of UCG
