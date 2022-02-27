@@ -3,6 +3,8 @@ Made by Elijah S Cole 2021 onward
 
 TODO:
 	
+	Fix site on mobile
+	
 	Create games/cooking sections
 		
 		Cool games section: Favorite games would be too hard to decide
@@ -14,8 +16,6 @@ TODO:
 		Pics of food i cooked
 			
 			Maybe recipes? Maybe too much work
-	
-	Take decent selfie to put in place of skeleton
 	
 	Figure out how to use boxshadow to, like, negative-radius a border
 		
